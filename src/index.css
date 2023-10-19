@@ -1,0 +1,22 @@
+* {
+  margin: 0 auto;
+  /* padding: 0rem; */
+  margin-top: 0.5rem;
+  /* margin-right: 5px; */
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif; /* Specify the correct font-family here */
+}
+
+.h1 h1 {
+  font-size: 5.2em;
+  line-height: 1.1;
+}
+
+.row {
+   --bs-gutter-x: 0rem !important
+}
+#my-container {
+  overflow-x: hidden;
+}

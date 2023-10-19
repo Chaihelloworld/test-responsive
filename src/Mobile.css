@@ -1,0 +1,135 @@
+.my-heading-mobile {
+  font-size: 60px;
+  color: #e7e7e7;
+  padding-bottom: 18px;
+  margin-left: 1.5rem;
+}
+.App-mobile {
+  display: block;
+}
+.numberText-mobile {
+  font-size: 18px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  padding-bottom: 0px;
+  color: #000000;
+  transform: translate(0px, -7px);
+}
+.numberTextGray-mobile {
+  font-size: 18px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  padding-bottom: 0px;
+  color: #000000;
+  transform: translate(0px, -7px);
+}
+
+.numberTextGray-vioret-mobile {
+  font-size: 20px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  padding-bottom: 0px;
+  color: #8f6be8;
+  transform: translate(0px, -7px);
+}
+.Subtext-mobile {
+  color: #c2c2c2;
+  padding-left: 10px;
+}
+.Subtext-three-mobile {
+  color: #c2c2c2;
+}
+.Subtext-three-mobile p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.numberTextGray-vioret-mobile::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the height to your desired underline thickness */
+  background-color: #ffffff;
+  border-radius: 2px; /* Adjust the radius for the rounded border */
+}
+.numberText-mobile::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the height to your desired underline thickness */
+  background-color: #603ebe;
+  border-radius: 2px; /* Adjust the radius for the rounded border */
+}
+.numberTextGray-mobile::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the height to your desired underline thickness */
+  background-color: #ffffff;
+  border-radius: 2px; /* Adjust the radius for the rounded border */
+}
+.section-first-mobile {
+  background-color: #fff;
+  height: 280px;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.section-sec-mobile {
+  background-color: #f5f4f9;
+  height: 280px;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+.section-three-mobile {
+  background-color: #5e3db3;
+  height: 280px;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+.section-three-blue-mobile {
+  background-color: #090c35;
+  height: 280px;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+.custom-element-mobile {
+  --bs-gutter-x: 0; /* Disable horizontal gutter spacing */
+}
+@media only screen and (min-width: 767px) {
+  .my-heading-mobile {
+    display: none;
+  }
+  .App-mobile {
+    display: none;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 100% !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.carousel-indicators [aria-current="false"] {
+  background-color: #d8d8d8 !important;
+}
+/* Change background color for Slide 2 and Slide 1 */
+.carousel-indicators [aria-current="true"][aria-label="Slide 2"],
+.carousel-indicators [aria-current="true"][aria-label="Slide 1"] {
+  background-color: #5c3caf !important;
+}
+
+/* Change background color for Slide 3 */
+.carousel-indicators [aria-current="true"][aria-label="Slide 3"] {
+  background-color: #d8d8d8 !important;
+}

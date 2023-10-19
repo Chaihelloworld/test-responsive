@@ -1,0 +1,200 @@
+.my-heading {
+  font-size: 90px;
+  color: #e7e7e7;
+  padding-bottom: 18px;
+}
+.main-display-sw-app {
+  padding-top: 8rem;
+}
+.main-display-img {
+  display: flex !important;
+  position: absolute !important;
+}
+.numberText {
+  font-size: 20px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  padding-bottom: 0px;
+  color: #000000;
+  transform: translate(0px, -7px);
+}
+.numberTextGray {
+  font-size: 20px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  padding-bottom: 0px;
+  color: #000000;
+  transform: translate(0px, -7px);
+}
+
+.numberTextGray-vioret {
+  font-size: 20px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  padding-bottom: 0px;
+  color: #8f6be8;
+  transform: translate(0px, -7px);
+}
+.Subtext {
+  color: #c2c2c2;
+  padding-left: 10px;
+}
+.Subtext-three {
+  color: #c2c2c2;
+}
+.Subtext-three p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.numberTextGray-vioret::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the height to your desired underline thickness */
+  background-color: #ffffff;
+  border-radius: 2px; /* Adjust the radius for the rounded border */
+}
+.numberText::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the height to your desired underline thickness */
+  background-color: #603ebe;
+  border-radius: 2px; /* Adjust the radius for the rounded border */
+}
+.numberTextGray::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust the height to your desired underline thickness */
+  background-color: #ffffff;
+  border-radius: 2px; /* Adjust the radius for the rounded border */
+}
+.section-first {
+  background-color: #fff;
+  height: 266px;
+  display: grid;
+  align-items: center;
+}
+
+.section-sec {
+  background-color: #f5f4f9;
+  height: 206px;
+  display: grid;
+  align-items: center;
+}
+
+.section-three {
+  background-color: #5e3db3;
+  height: 206px;
+  display: grid;
+  align-items: center;
+}
+.section-three-blue {
+  background-color: #090c35;
+  height: 206px;
+  display: grid;
+  align-items: center;
+}
+
+.custom-element {
+  --bs-gutter-x: 0; /* Disable horizontal gutter spacing */
+}
+p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+}
+.img-fluid {
+  width: 542px !important;
+  height: auto;
+  object-fit: cover;
+}
+.img-fluid-bas {
+  object-fit: contain !important;
+  width: 140% !important;
+  height: 678px !important;
+  margin-left: -12rem !important;
+  margin-top: -7rem;
+  height: auto;
+}
+/* responsive ipad  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: portrait) {
+  .img-fluid {
+    max-width: 120% !important;
+    margin-left: -8rem;
+  }
+  .img-fluid-bas {
+    object-fit: cover !important;
+    width: 148% !important;
+    height: 568px !important;
+    object-position: -35% 0 !important;
+    margin-top: -6rem !important;
+    margin-left: -30px !important;
+  }
+  .my-heading {
+    font-size: 65px;
+  }
+  .offset-md-6 {
+    margin-left: 40% !important;
+  }
+  .offset-md-2 {
+    margin-left: 4% !important;
+  }
+  .section-first,
+  .section-sec,
+  .section-three,
+  .section-three-blue {
+    height: 207px !important;
+  }
+}
+/* responsive ipad mini */
+@media only screen and (min-device-width: 820px) and (max-device-width: 821px) and (orientation: portrait) {
+  .img-fluid-bas {
+    width: 491px !important;
+    height: 568px !important;
+    object-fit: cover !important;
+    object-position: -20% 0 !important;
+    margin-top: -6rem !important;
+    margin-left: -0px !important ;
+  }
+  
+}
+/* responsive mobile */
+@media only screen and (max-width: 767px) {
+  .main-display-sw-app {
+    padding-top: 0px !important;
+  }
+  .main-display-img {
+    position: unset !important;
+  }
+  .img-fluid {
+    width: 75% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+  .img-fluid-bas {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .content-col {
+    position: relative;
+    display: flex;
+  }
+  .my-heading {
+    display: none;
+  }
+  .section-first,
+  .section-sec,
+  .section-three,
+  .section-three-blue {
+    display: none;
+  }
+}
